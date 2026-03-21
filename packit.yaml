@@ -1,0 +1,18 @@
+downstream_package_name: alacritty
+upstream_project_url: https://github.com/alacritty/alacritty
+specfile_path: alacritty.spec
+
+jobs:
+  - job: copr_build
+    trigger: release
+    owner: jchishom204
+    project: Alacritty
+    targets:
+      - epel-10-x86_64
+      - almalinux-kitten-10-x86_64
+      - almalinux-kitten-10-x86_64_v2
+      - almalinux-kitten+epel-10-x86_64_v2
+
+actions:
+  post-upstream-clone:
+    - "git submodule update --init"
