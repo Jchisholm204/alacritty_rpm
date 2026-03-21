@@ -7,7 +7,7 @@ License:        ASL 2.0
 URL:            https://github.com/%{name}/%{name}
 Source0:        https://github.com/%{name}/%{name}/archive/refs/tags/v%{version}.tar.gz
 
-BuildRequires:  cmake freetype-devel fontconfig-devel libxcb-devel libxkbcommon-devel g++
+BuildRequires:  cargo rust cmake freetype-devel fontconfig-devel libxcb-devel libxkbcommon-devel g++
 Requires:       freetype fontconfig libxcb libxkbcommon
 
 
