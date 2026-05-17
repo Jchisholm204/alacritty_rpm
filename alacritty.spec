@@ -1,5 +1,5 @@
 Name:           alacritty
-Version:        %autorelease
+Version:        v0.16.1
 Release:        1%{?dist}
 Summary:        A cross-platform, OpenGL terminal emulator.
 
